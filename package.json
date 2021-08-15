@@ -1,12 +1,17 @@
 {
   "name": "vanilla-3d",
   "version": "0.0.0",
+  "homepage": "http://EderAC.github.io/porinho3D",
+
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
+    "gh-pages": "^3.2.3",
     "vite": "^2.4.4"
   },
   "dependencies": {

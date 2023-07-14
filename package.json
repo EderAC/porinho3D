@@ -1,7 +1,7 @@
 {
   "name": "vanilla-3d",
   "version": "0.0.0",
-  "homepage": "http://EderAC.github.io/porinho3D",
+  "homepage": "https://porinho3d.vercel.app/",
 
   "scripts": {
     "dev": "vite",

@@ -69,7 +69,7 @@ const spaceTexture = new THREE.TextureLoader().load('./assets/space.jpg');
 scene.background = spaceTexture;
 
 //porinho
-const porinhoTexture = new THREE.TextureLoader().load('./assets/porinho.jpg');
+const porinhoTexture = new THREE.TextureLoader().load('./assets/porinho');
 
 const porinho = new THREE.Mesh(
    new THREE.BoxGeometry(3,3,3),

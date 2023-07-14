@@ -22,11 +22,13 @@ main {
   color: white;
   z-index: 99;
   position: absolute;
-  width: 100%;
+  justify-content: denter;
+  align-items: center;
   margin: 0px auto;
   padding: 120px 0px;
   
-  display: grid;
+  display: flex;
+  flex-direction: column;
   grid-template-columns: repeat(12, 1fr);
 }
 
@@ -59,10 +61,15 @@ canvas {
     font-size: 1.25rem;
     line-height: 1.5;
     margin-bottom: var(--spacing);
+    min-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: denter;
+    align-items: center;
   }
 
   section img {
-    width: 35.5rem;
+    width: 32.5rem;
   }
 
   blockquote {

@@ -65,11 +65,11 @@ function addStar() {
 
 Array(200).fill().forEach(addStar)
 
-const spaceTexture = new THREE.TextureLoader().load('./assets/space.jpg');
+const spaceTexture = new THREE.TextureLoader().load('assets/space.jpg');
 scene.background = spaceTexture;
 
 //porinho
-const porinhoTexture = new THREE.TextureLoader().load('./assets/porinho');
+const porinhoTexture = new THREE.TextureLoader().load('assets/porinho.jpg');
 
 const porinho = new THREE.Mesh(
    new THREE.BoxGeometry(3,3,3),
@@ -78,8 +78,8 @@ const porinho = new THREE.Mesh(
 
 scene.add(porinho);
 //mars
-const marsTexture = new THREE.TextureLoader().load('./assets/mars.jpg');
-const normalTexture = new THREE.TextureLoader().load('./assets/mars-normal.jpg');
+const marsTexture = new THREE.TextureLoader().load('assets/mars.jpg');
+const normalTexture = new THREE.TextureLoader().load('assets/mars-normal.jpg');
 
 const mars = new THREE.Mesh(
    new THREE.SphereGeometry(3,32,32),

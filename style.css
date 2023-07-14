@@ -15,21 +15,21 @@ canvas {
   font-weight: 400;
   font-style: normal;
 }
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 
 main {
-  width: 100vw;
   color: white;
-  z-index: 99;
   position: absolute;
-  justify-content: denter;
-  align-items: center;
-  margin: 0px auto;
-  padding: 120px 0px;
-  
   display: flex;
   flex-direction: column;
-  grid-template-columns: repeat(12, 1fr);
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
 h1, h2, h3, blockquote {
@@ -38,55 +38,40 @@ h1, h2, h3, blockquote {
   font-style: normal;
 }
 
-canvas {
-  position: fixed;
-  top: 0;
-  left: 0;
+header {
+  background: var(--dark-bg);
+  font-size: 2.5rem;
+  padding: 2rem;
+  margin-bottom: var(--spacing);
 }
 
+section {
+  padding: 1rem;
+  background: var(--dark-bg);
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin-bottom: var(--spacing);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
 
+section img {
+  width: 300px;
+}
 
-  header {
-    background: var(--dark-bg);
-    grid-column: 2 / span 5;
-    font-size: 2.5rem;
-    padding: 2rem;
-    margin-bottom: var(--spacing);
-  }
+blockquote {
+  margin: 0;
+  padding: 0;
+  margin-bottom: var(--spacing);
+}
 
-  section {
-    grid-column: 2 / 8;
-    padding: 1rem;
-    background: var(--dark-bg);
-    font-size: 1.25rem;
-    line-height: 1.5;
-    margin-bottom: var(--spacing);
-    min-width: 600px;
-    display: flex;
-    flex-direction: column;
-    justify-content: denter;
-    align-items: center;
-  }
-
-  section img {
-    width: 32.5rem;
-  }
-
-  blockquote {
-    margin: 0;
-    padding: 0;
-    grid-column: 2 / span 9;
-    margin-bottom: var(--spacing);
-  }
-
-  blockquote p {
-    color: black;
-    background-color: white;
-    font-size: 4rem;
-    display: inline;
-    line-height: 1;
-  }
-
-  .left {
-    grid-column: 6 / 12;
-  }
+blockquote p {
+  color: black;
+  background-color: white;
+  font-size: 4rem;
+  display: inline;
+  line-height: 1;
+}
